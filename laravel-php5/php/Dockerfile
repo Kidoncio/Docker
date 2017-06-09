@@ -1,4 +1,4 @@
-FROM php:5.6.29-fpm-alpine
+FROM php:7.1.5-alpine
 
 RUN apk upgrade --update && apk add \
     freetype libpng libjpeg-turbo freetype-dev postgresql-dev libpng-dev libjpeg-turbo-dev libxml2-dev libmcrypt libmcrypt-dev \
