@@ -3,7 +3,6 @@ MAINTAINER Lucas Nascimento <lucas@lapou.com.br>
 
 RUN apt-get update && apt-get install -y \
         autoconf \
-        build-base \
         curl nano \
         git \
         libfreetype6-dev \
