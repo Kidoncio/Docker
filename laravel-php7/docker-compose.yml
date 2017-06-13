@@ -3,7 +3,7 @@ services:
     web:
         build: ./nginx
         volumes:
-            - .:/app/public
+            - .:/usr/share/nginx/html/public
         links:
             - php
         ports:
@@ -11,7 +11,7 @@ services:
     php:
         build: ./php
         volumes:
-            - .:/app/public
+            - .:/usr/share/nginx/html/public
         links:
             - db
         expose:
