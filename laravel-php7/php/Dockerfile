@@ -12,3 +12,6 @@ RUN apk upgrade --update && apk add \
     && docker-php-ext-install pdo pdo_mysql pdo_pgsql pgsql mcrypt gd mbstring tokenizer xml
 
 COPY www.conf /usr/local/etc/php-fpm.d/www.conf
+
+RUN curl -sS https://getcomposer.org/installer | php \
+    && mv composer.phar /usr/local/bin/composer
