@@ -2,7 +2,7 @@ FROM php:7.1.5-alpine
 MAINTAINER Lucas Nascimento <lucas@lapou.com.br>
 
 RUN apk upgrade --update && apk add \
-    freetype libpng libjpeg-turbo freetype-dev postgresql-dev libpng-dev libjpeg-turbo-dev libxml2-dev libmcrypt libmcrypt-dev \
+    freetype libpng libjpeg-turbo freetype-dev postgresql-dev php-memcached libpng-dev libjpeg-turbo-dev libxml2-dev libmcrypt libmcrypt-dev \
     && docker-php-ext-configure gd \
         --with-gd \
         --with-freetype-dir=/usr/include/ \
